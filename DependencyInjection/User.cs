@@ -2,11 +2,11 @@
 
 public class User
 {
-    private ConsoleNotification _notificationService;
-    public User(string userName)
+    private INotificationService _notificationService;
+    public User(string userName, INotificationService notificationService)
     {
         Username = userName;
-        _notificationService = new ConsoleNotification();
+        _notificationService = notificationService;
     }
 
     public string Username { get; set; }

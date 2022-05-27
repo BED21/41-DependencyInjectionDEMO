@@ -1,7 +1,7 @@
 ﻿
 namespace DependencyInjection
 {
-    public class ConsoleNotification
+    public class ConsoleNotification : INotificationService
     {
         public void NotifyUserNameChanged(User user)
         {
